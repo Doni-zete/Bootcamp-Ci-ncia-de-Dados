@@ -18,12 +18,7 @@ O bootcamp Unimed-BH Ciência de Dados em parceria com a [Digital Innovation One
 * Cloud Computer
 * Machine Learning
 
-:arrow_down: **Como baixar o projeto**
 
-* OBS: É necessário ter o git instalado em sua máquina
-* Executar o Seguinte comando no seu **Terminal**  ou no **CMD**:
-
-  ## `git clone https://github.com/Doni-zete/Netflix-Clone.git`
         
         
         
