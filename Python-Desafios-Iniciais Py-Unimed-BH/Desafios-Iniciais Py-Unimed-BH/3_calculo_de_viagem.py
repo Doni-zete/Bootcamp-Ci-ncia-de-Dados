@@ -1,4 +1,4 @@
-Desafio
+""" Desafio
 Rubens quer calcular e mostrar a quantidade de litros de combustível gastos em uma viagem de carro, 
 sendo que seu carro faz 12 KM/L. Como ele não sabe fazer um programa que o auxilie nessa missão, ele te pede ajuda.
 Para efetuar o cálculo, deve-se fornecer o tempo gasto em horas na viagem e a velocidade média durante a mesma em km/h.
@@ -9,7 +9,7 @@ Entrada
 O arquivo de entrada contém dois inteiros. O primeiro é o tempo gasto na viagem em horas e o segundo é a velocidade média durante a mesma em km/h.
 
 Saída
-Imprima a quantidade de litros necessária para realizar a viagem, com três dígitos após o ponto decimal
+Imprima a quantidade de litros necessária para realizar a viagem, com três dígitos após o ponto decimal """
 
  
 ===========================================
@@ -26,7 +26,7 @@ valores = input().split()
 tempo_gasto = int(valores[0])
 velocidade_media = int(valores[1])
 
-faz_litro = 12
+faz_km_litro = 12
 litro = tempo_gasto * velocidade_media
-total = litro/faz_litro
+total = litro/faz_km_litro
 print("%.3f" % total)
