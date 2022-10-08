@@ -11,7 +11,9 @@ Eles desejam ser listados no Livro de Recordes do Guinness, mas para isso devem 
 descrevendo os fatos básicos da competição. Em particular, eles devem informar o número médio de cachorros-quentes
 consumidos pelos participantes durante a competição.
 
-Você pode ajudá-los? Eles prometeram pagá-lo com um dos seus saborosos cachorros-quentes. Dados o número total de cachorros-quentes consumidos e o número total de participantes na competição, você deve escrever um programa para 
+Você pode ajudá-los? Eles prometeram pagá-lo com um dos seus saborosos cachorros-quentes. 
+Dados o número total de cachorros-quentes consumidos e o número total de participantes na 
+competição, você deve escrever um programa para 
 determinar o número médio de cachorros-quentes consumidos pelos participantes.
 
 Entrada
