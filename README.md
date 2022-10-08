@@ -19,6 +19,38 @@ O bootcamp Unimed-BH Ciência de Dados em parceria com a [Digital Innovation One
 * Machine Learning
 
 
+
+
+# Desafios-Dio
+## :rocket: Desafios feito nos Bootcamps da [Digital Innovation One](https://web.digitalinnovation.one/track/everis-fullstack-developer)
+
+
+
+        
+<div>
+<ul>
+   <li>
+     <details>
+<summary><mark>Desafios Iniciais Py - Unimed-BH</mark> ✅</summary>
+    
+## :computer:**Desafio de código**
+|**Desafio** | Solução |
+| :---: |  :---: | 
+| ✅As Duas Torres | [**Código**](https://github.com/Doni-zete/Bootcamp-Ciencia-Dados/blob/main/Python-Desafios-Iniciais%20Py-Unimed-BH/Desafios-Iniciais%20Py-Unimed-BH/1-as_duas_torres.py) | 
+| ✅Cachorros-Quentes | [**Código**](https://github.com/Doni-zete/Bootcamp-Ciencia-Dados/blob/main/Python-Desafios-Iniciais%20Py-Unimed-BH/Desafios-Iniciais%20Py-Unimed-BH/2_cachorros_quentes.py) | 
+| ✅Cálculo de viagem | [**Código**](https://github.com/Doni-zete/Bootcamp-Ciencia-Dados/blob/main/Python-Desafios-Iniciais%20Py-Unimed-BH/Desafios-Iniciais%20Py-Unimed-BH/3_calculo_de_viagem.py) | 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+      
+
+
+</ul>
+                </li>    
+</div>
+ 
+ 
+
         
         
         
