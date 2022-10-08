@@ -21,8 +21,7 @@ O bootcamp Unimed-BH Ciência de Dados em parceria com a [Digital Innovation One
 
 
 
-# Desafios-Dio
-## :rocket: Desafios feito nos Bootcamps da [Digital Innovation One](https://web.digitalinnovation.one/track/everis-fullstack-developer)
+## :rocket: Desafios feito nos Bootcamps da [Digital Innovation One](https://web.dio.me/coding/desafios-de-codigo-iniciais-py-unimedbh/algorithm/as-duas-torres?back=/track/geracao-tech-unimed-bh-ciencia-de-dados)
 
 
 
