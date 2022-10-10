@@ -3,7 +3,7 @@
 
 
 
- # :computer:  Bootcamp-Geração Tech Unimed-BH - Ciência de Dados
+ # :computer:Geração Tech Unimed-BH - Ciência de Dados
 
 
 ## :rocket: Sobre o Bootcamp
