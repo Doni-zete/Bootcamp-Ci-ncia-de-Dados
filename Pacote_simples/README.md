@@ -1,27 +1,24 @@
-# package_name
+# Package_simples
 
-Description. 
-The package package_name is used to:
-	- 
-	-
+Criação de Pacotes de Processamento Simples; da plataforma [DIO - Digital Innovation One](https://web.dio.me/). 
 
-## Installation
+Descrição: 
+O pacote 'processamento_simples' pode ser usado para:
+	- Testar conhecimento adquiridos no curso de Python para Cientistas de dados da Dio
+	
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+## Instalação
+
+Use o gerenciador de pacotes  [pip](https://pip.pypa.io/en/stable/) para instalação do pacote processamento_simples
 
 ```bash
-pip install package_name
+pip install simples
 ```
 
-## Usage
 
-```python
-from package_name.module1_name import file1_name
-file1_name.my_function()
-```
 
 ## Author
-My_name
+Donizete
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
