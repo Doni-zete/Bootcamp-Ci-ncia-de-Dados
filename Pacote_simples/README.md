@@ -3,7 +3,7 @@
 Criação de Pacotes Simples; da plataforma [DIO - Digital Innovation One](https://web.dio.me/). 
 
 Descrição: 
-O pacote '**processamento_de_imagem**' pode ser usado para:
+O pacote '**processamento_simples**' pode ser usado para:
 * Testar conhecimento adquiridos no curso de Python para Cientistas de dados da Dio
 	
 	
