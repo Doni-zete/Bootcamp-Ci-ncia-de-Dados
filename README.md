@@ -41,6 +41,9 @@ O bootcamp Unimed-BH Ciência de Dados em parceria com a [Digital Innovation One
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+
+
+
       
 
 
@@ -50,6 +53,33 @@ O bootcamp Unimed-BH Ciência de Dados em parceria com a [Digital Innovation One
  
  
 
+
+<div>
+<ul>
+   <li>
+     <details>
+<summary><mark>Desafios Intermediários Py - Unimed-BH
+</mark> ✅</summary>
+    
+## :computer:**Desafio de código**
+|**Desafio** | Solução |
+| :---: |  :---: | 
+| ✅Alfabeto | [**Código**](https://github.com/Doni-zete/Bootcamp-Ciencia-Dados/blob/main/Python-Desafios-Iniciais%20Py-Unimed-BH/Desafios-Intermedi%C3%A1rios%20Py-Unimed-BH/Alfabeto.py) | 
+| ✅Papagaio Poliglota | [**Código**](https://github.com/Doni-zete/Bootcamp-Ciencia-Dados/blob/main/Python-Desafios-Iniciais%20Py-Unimed-BH/Desafios-Intermedi%C3%A1rios%20Py-Unimed-BH/Papagaio%20Poliglota.py) | 
+| ✅Aumento Salarial | [**Código**](https://github.com/Doni-zete/Bootcamp-Ciencia-Dados/blob/main/Python-Desafios-Iniciais%20Py-Unimed-BH/Desafios-Intermedi%C3%A1rios%20Py-Unimed-BH/Aumento%20Salarial.py) | 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+      
+
+
+</ul>
+                </li>    
+</div>
+ 
         
         
         
