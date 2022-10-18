@@ -1,12 +1,12 @@
 # Projeto de analise exploratória covid-19 no brasil
 Projeto Digital Innovation One em parceria com o Prof. Dr. Neylson Crepalde
 
-Análise exploratória dos dados do COVID-19 com Python covid-19 no brasil
+Análise exploratória dos dados do COVID-19 com Python covid-19 no Brasil
 
 ## Etapas:
 
-    * Importacao das bibliotecas usadas na analise;
-    * Importacao da base de dados para analise;
+    * Importação das bibliotecas usadas na analise;
+    * Importação da base de dados para analise;
     * Correção e Limpeza dos dados da analise;
     * Separação dos dados importantes - País Brasil;
     * Plotagem dos primeiros graficos;
