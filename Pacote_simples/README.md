@@ -5,6 +5,9 @@ Criação de Pacotes Simples; da plataforma [DIO - Digital Innovation One](https
 Descrição: 
 O pacote '**processamento_simples**' pode ser usado para:
 * Testar conhecimento adquiridos no curso de Python para Cientistas de dados da Dio
+* Conceitos relacionados aos pacotes
+* Atualizar o projeto e gerar as distribuições
+* Publicar o pacote
 	
 	
 
