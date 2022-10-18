@@ -1,20 +1,9 @@
-Metadata-Version: 2.1
-Name: package-simples
-Version: 0.0.2
-Summary: Meu pacote
-Home-page: https://github.com/Doni-zete/Bootcamp-Ciencia-Dados/tree/main/Pacote_simples
-Author: Donizete
-License: UNKNOWN
-Platform: UNKNOWN
-Requires-Python: >=3.8
-Description-Content-Type: text/markdown
-
 # Package_simples
 
 Criação de Pacotes Simples; da plataforma [DIO - Digital Innovation One](https://web.dio.me/). 
 
 Descrição: 
-O pacote '**processamento_de_imagem**' pode ser usado para:
+O pacote '**processamento_simples**' pode ser usado para:
 * Testar conhecimento adquiridos no curso de Python para Cientistas de dados da Dio
 	
 	
@@ -37,5 +26,3 @@ Donizete
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
-
-
