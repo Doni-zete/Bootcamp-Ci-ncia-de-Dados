@@ -70,6 +70,8 @@ O bootcamp Unimed-BH Ciência de Dados em parceria com a [Digital Innovation One
 ## :rocket: Análise de dados com Python e Pandas [Análise Exploratoria](https://github.com/Doni-zete/Bootcamp-Ciencia-Dados/blob/main/Projeto_analise_exploratoria/analise_exploratoria.ipynb)        
         
         
+ ## :pushpin: Criação de pacotes de processamento de imagens em Python [Pacote simples](https://github.com/Doni-zete/Bootcamp-Ciencia-Dados/tree/main/Pacote_simples) 
+        
       
 
  
