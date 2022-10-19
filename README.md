@@ -21,7 +21,7 @@ O bootcamp Unimed-BH Ciência de Dados em parceria com a [Digital Innovation One
 
 
 
-## :rocket: Desafios feito nos Bootcamps da [Digital Innovation One](https://web.dio.me/coding/desafios-de-codigo-iniciais-py-unimedbh/algorithm/as-duas-torres?back=/track/geracao-tech-unimed-bh-ciencia-de-dados)
+## :computer: Desafios feito nos Bootcamps da [Digital Innovation One](https://web.dio.me/coding/desafios-de-codigo-iniciais-py-unimedbh/algorithm/as-duas-torres?back=/track/geracao-tech-unimed-bh-ciencia-de-dados)
 
 
 
@@ -39,12 +39,6 @@ O bootcamp Unimed-BH Ciência de Dados em parceria com a [Digital Innovation One
 | ✅Cachorros-Quentes | [**Código**](https://github.com/Doni-zete/Bootcamp-Ciencia-Dados/blob/main/Python-Desafios-Iniciais%20Py-Unimed-BH/Desafios-Iniciais%20Py-Unimed-BH/2_cachorros_quentes.py) | 
 | ✅Cálculo de viagem | [**Código**](https://github.com/Doni-zete/Bootcamp-Ciencia-Dados/blob/main/Python-Desafios-Iniciais%20Py-Unimed-BH/Desafios-Iniciais%20Py-Unimed-BH/3_calculo_de_viagem.py) | 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-      
 
 
 </ul>
@@ -69,18 +63,11 @@ O bootcamp Unimed-BH Ciência de Dados em parceria com a [Digital Innovation One
 | ✅Aumento Salarial | [**Código**](https://github.com/Doni-zete/Bootcamp-Ciencia-Dados/blob/main/Python-Desafios-Iniciais%20Py-Unimed-BH/Desafios-Intermedi%C3%A1rios%20Py-Unimed-BH/Aumento%20Salarial.py) | 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-
-
-
-      
-
-
 </ul>
                 </li>    
 </div>
- 
-        
+
+## :rocket: Análise de dados com Python e Pandas [Análise Exploratoria](https://github.com/Doni-zete/Bootcamp-Ciencia-Dados/blob/main/Projeto_analise_exploratoria/analise_exploratoria.ipynb)        
         
         
       
