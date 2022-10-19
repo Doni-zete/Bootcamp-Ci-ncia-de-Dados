@@ -1,4 +1,4 @@
-# Projeto de Banco de Dados de E-commerce
+# Projeto de Banco de Dados E-commerce
 
 Objetivo:
 Refine o modelo apresentado acrescentando os seguintes pontos:
