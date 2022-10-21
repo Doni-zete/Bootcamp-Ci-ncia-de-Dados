@@ -2,10 +2,6 @@
 use oficina;
 
 
-
-
-
-
 -- -----------------------------------------------------
 -- Tabela Veiculo
 -- -----------------------------------------------------
@@ -14,6 +10,8 @@ CREATE TABLE Veiculo (
   placa VARCHAR(45) NOT NULL,
   modelo VARCHAR(45) NOT NULL,
   PRIMARY KEY (idVeiculo));
+  
+  desc Veiculo;
 
 
 -- -----------------------------------------------------
@@ -29,12 +27,9 @@ CREATE TABLE Cliente (
   email VARCHAR(45) NOT NULL,
   Veiculo_idVeiculo INT NOT NULL,
   PRIMARY KEY (idCliente),
-  INDEX fk_Cliente_Veiculo1_idx (Veiculo_idVeiculo ASC),
   CONSTRAINT fk_Cliente_Veiculo1
     FOREIGN KEY (Veiculo_idVeiculo)
-    REFERENCES Veiculo (idVeiculo)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
+    REFERENCES Veiculo (idVeiculo));
 
 
 -- -----------------------------------------------------
@@ -78,18 +73,12 @@ CREATE TABLE Ordem_Serviço (
   Veiculo_idVeiculo INT NOT NULL,
   Equipe_idEquipe INT NOT NULL,
   PRIMARY KEY (idOrdem_Serviço),
-  INDEX fk_Ordem_Serviço_Veiculo1_idx (Veiculo_idVeiculo ASC),
-  INDEX fk_Ordem_Serviço_Equipe1_idx (Equipe_idEquipe ASC),
   CONSTRAINT fk_Ordem_Serviço_Veiculo1
     FOREIGN KEY (Veiculo_idVeiculo)
-    REFERENCES Veiculo (idVeiculo)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+    REFERENCES Veiculo (idVeiculo),
   CONSTRAINT fk_Ordem_Serviço_Equipe1
     FOREIGN KEY (Equipe_idEquipe)
-    REFERENCES Equipe (idEquipe)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
+    REFERENCES Equipe (idEquipe));
 
 
 -- -----------------------------------------------------
@@ -99,18 +88,13 @@ CREATE TABLE Cliente_Oficina_mecanica (
   Cliente_idCliente INT NOT NULL,
   Oficina_mecanica_idOficina_mecanica INT NOT NULL,
   PRIMARY KEY (Cliente_idCliente, Oficina_mecanica_idOficina_mecanica),
-  INDEX fk_Cliente_has_Oficina_mecanica_Oficina_mecanica1_idx (Oficina_mecanica_idOficina_mecanica ASC),
-  INDEX fk_Cliente_has_Oficina_mecanica_Cliente1_idx (Cliente_idCliente ASC),
   CONSTRAINT fk_Cliente_has_Oficina_mecanica_Cliente1
     FOREIGN KEY (Cliente_idCliente)
-    REFERENCES Cliente (idCliente)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+    REFERENCES Cliente (idCliente),
   CONSTRAINT fk_Cliente_has_Oficina_mecanica_Oficina_mecanica1
     FOREIGN KEY (Oficina_mecanica_idOficina_mecanica)
     REFERENCES Oficina_mecanica (idOficina_mecanica)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
+);
 
 
 -- -----------------------------------------------------
@@ -122,12 +106,10 @@ CREATE TABLE Pessoa_fisica (
   cpf INT NOT NULL,
   Cliente_idCliente INT NOT NULL,
   PRIMARY KEY (idPessoa_fisica),
-  INDEX fk_Pessoa_fisica_Cliente1_idx (Cliente_idCliente ASC),
   CONSTRAINT fk_Pessoa_fisica_Cliente1
     FOREIGN KEY (Cliente_idCliente)
     REFERENCES Cliente (idCliente)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
+);
 
 
 -- -----------------------------------------------------
@@ -139,12 +121,10 @@ CREATE TABLE Pessoa_juridica (
   cnpj INT NOT NULL,
   Cliente_idCliente INT NOT NULL,
   PRIMARY KEY (idPessoa_juridica),
-  INDEX fk_Pessoa_juridica_Cliente1_idx (Cliente_idCliente ASC),
   CONSTRAINT fk_Pessoa_juridica_Cliente1
     FOREIGN KEY (Cliente_idCliente)
     REFERENCES Cliente (idCliente)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
+);
 
 
 -- -----------------------------------------------------
@@ -165,18 +145,13 @@ CREATE TABLE  Ordem_Serviço_Estoque (
   Estoque_peça_idEstoque_peça INT NOT NULL,
   Ordem_Serviço_idOrdem_Serviço INT NOT NULL,
   PRIMARY KEY (Estoque_peça_idEstoque_peça, Ordem_Serviço_idOrdem_Serviço),
-  INDEX fk_Estoque_peça_Ordem_Serviço_Ordem_Serviço1_idx (Ordem_Serviço_idOrdem_Serviço ASC),
-  INDEX fk_Estoque_peça_has_Ordem_Serviço_Estoque_peça1_idx (Estoque_peça_idEstoque_peça ASC),
   CONSTRAINT fk_Estoque_peça_has_Ordem_Serviço_Estoque_peça1
     FOREIGN KEY (Estoque_peça_idEstoque_peça)
-    REFERENCES Estoque_peça (idEstoque_peça)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+    REFERENCES Estoque_peça (idEstoque_peça),
   CONSTRAINT fk_Estoque_peça_Ordem_Serviço_Ordem_Serviço1
     FOREIGN KEY (Ordem_Serviço_idOrdem_Serviço)
     REFERENCES Ordem_Serviço (idOrdem_Serviço)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
+    );
 
 
 -- -----------------------------------------------------
@@ -199,18 +174,12 @@ CREATE TABLE Cliente_para_Orçamento (
   Cliente_idCliente INT NOT NULL,
   Orçamento_idOrçamento INT NOT NULL,
   PRIMARY KEY (Cliente_idCliente, Orçamento_idOrçamento),
-  INDEX fk_Cliente_has_Orçamento_Orçamento1_idx (Orçamento_idOrçamento ASC),
-  INDEX fk_Cliente_has_Orçamento_Cliente1_idx (Cliente_idCliente ASC),
   CONSTRAINT fk_Cliente_has_Orçamento_Cliente1
     FOREIGN KEY (Cliente_idCliente)
-    REFERENCES Cliente (idCliente)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+    REFERENCES Cliente (idCliente),
   CONSTRAINT fk_Cliente_has_Orçamento_Orçamento1
     FOREIGN KEY (Orçamento_idOrçamento)
-    REFERENCES Orçamento (idOrçamento)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
+    REFERENCES Orçamento (idOrçamento));
 
 
 -- -----------------------------------------------------
@@ -220,18 +189,13 @@ CREATE TABLE Oficina_mecanica_Equipe (
   Oficina_mecanica_idOficina_mecanica INT NOT NULL,
   Equipe_idEquipe INT NOT NULL,
   PRIMARY KEY (Oficina_mecanica_idOficina_mecanica, Equipe_idEquipe),
-  INDEX fk_Oficina_mecanica_has_Equipe_Equipe1_idx (Equipe_idEquipe ASC),
-  INDEX fk_Oficina_mecanica_Equipe_Oficina_mecanica_idx (Oficina_mecanica_idOficina_mecanica ASC),
   CONSTRAINT fk_Oficina_mecanica_Equipe_Oficina_mecanica
     FOREIGN KEY (Oficina_mecanica_idOficina_mecanica)
-    REFERENCES Oficina_mecanica (idOficina_mecanica)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+    REFERENCES Oficina_mecanica (idOficina_mecanica),
   CONSTRAINT fk_Oficina_mecanica_has_Equipe_Equipe1
     FOREIGN KEY (Equipe_idEquipe)
     REFERENCES Equipe (idEquipe)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
+    );
 
 
 -- -----------------------------------------------------
@@ -252,18 +216,12 @@ CREATE TABLE Tabela_mão_obraOrçamento (
   Tabela_mão_obra_idTabela_mão_obra INT NOT NULL,
   Orçamento_idOrçamento INT NOT NULL,
   PRIMARY KEY (Tabela_mão_obra_idTabela_mão_obra, Orçamento_idOrçamento),
-  INDEX fk_Tabela_mão_obra_Orçamento_Orçamento1_idx (Orçamento_idOrçamento ASC),
-  INDEX fk_Tabela_mão_obra_Orçamento_Tabela_mão__obra_idx (Tabela_mão_obra_idTabela_mão_obra ASC),
   CONSTRAINT fk_Tabela_mão_obra_Orçamento_Tabela_mão__obra
     FOREIGN KEY (Tabela_mão_obra_idTabela_mão_obra)
-    REFERENCES Tabela_mão_obra (idTabela_mão_obra)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+    REFERENCES Tabela_mão_obra (idTabela_mão_obra),
   CONSTRAINT fk_Tabela_mão_obra_Orçamento_Orçamento1
     FOREIGN KEY (Orçamento_idOrçamento)
-    REFERENCES Orçamento (idOrçamento)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
+    REFERENCES Orçamento (idOrçamento));
 
 
 -- -----------------------------------------------------
@@ -283,18 +241,12 @@ CREATE TABLE Ordem_Serviço_Serviço (
   Ordem_Serviço_idOrdem_Serviço INT NOT NULL,
   Serviço_idServiço INT NOT NULL,
   PRIMARY KEY (Ordem_Serviço_idOrdem_Serviço, Serviço_idServiço),
-  INDEX fk_Ordem_Serviço_Serviço_Serviço1_idx (Serviço_idServiço ASC),
-  INDEX fk_Ordem_Serviço_Serviço_Ordem_Serviço1_idx (Ordem_Serviço_idOrdem_Serviço ASC),
   CONSTRAINT fk_Ordem_Serviço_Serviço_Ordem_Serviço1
     FOREIGN KEY (Ordem_Serviço_idOrdem_Serviço)
-    REFERENCES Ordem_Serviço (idOrdem_Serviço)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+    REFERENCES Ordem_Serviço (idOrdem_Serviço),
   CONSTRAINT fk_Ordem_Serviço_Serviço_Serviço1
     FOREIGN KEY (Serviço_idServiço)
-    REFERENCES Serviço (idServiço)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
+    REFERENCES Serviço (idServiço));
 
 
 -- -----------------------------------------------------
@@ -304,18 +256,13 @@ CREATE TABLE Serviço_mão_obra (
   Serviço_idServiço INT NOT NULL,
   Tabela_mão_obra_idTabela_mão_obra INT NOT NULL,
   PRIMARY KEY (Serviço_idServiço, Tabela_mão_obra_idTabela_mão_obra),
-  INDEX fk_Serviço_Tabela_mão_obra_Tabela_mão_obra1_idx (Tabela_mão_obra_idTabela_mão_obra ASC),
-  INDEX fk_Serviço_has_Tabela_mão_obra_Serviço1_idx (Serviço_idServiço ASC),
   CONSTRAINT fk_Serviço_has_Tabela_mão_obra_Serviço1
     FOREIGN KEY (Serviço_idServiço)
-    REFERENCES Serviço (idServiço)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+    REFERENCES Serviço (idServiço),
   CONSTRAINT fk_Serviço_Tabela_mão_obra_Tabela_mão_obra1
     FOREIGN KEY (Tabela_mão_obra_idTabela_mão_obra)
     REFERENCES Tabela_mão_obra (idTabela_mão_obra)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
+    );
     
     
   
