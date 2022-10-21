@@ -8,5 +8,4 @@
 * Criar tabelas;
 * Eliminar recursos;
 * Visualizar dados no Amazon QuickSight.
-* Dica: você pode dar um "fork" no repositório para organizar melhor as suas alterações e evoluções, mantendo uma referência direta ao código original.
 
